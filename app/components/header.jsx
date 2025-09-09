@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { assets } from "@/assets/assets";
+import { assets } from "@/public/assets";
 import { motion } from "motion/react";
 
 export default function Header({ isDarMode }) {

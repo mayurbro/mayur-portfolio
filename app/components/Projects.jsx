@@ -1,4 +1,4 @@
-import { assets, workData } from "@/assets/assets";
+import { assets, workData } from "@/public/assets";
 import Image from "next/image";
 import { motion } from "motion/react";
 const Projects = () => {

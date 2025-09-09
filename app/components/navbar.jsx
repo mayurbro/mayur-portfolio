@@ -2,7 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 // import Image from "./Image";
 import Image from "next/image";
-import { assets } from "@/assets/assets";
+import { assets } from "@/public/assets";
 export default function Navbar({ isDarkMode, setIsDarkMode }) {
   const ref = useRef();
   const [scroll, setScroll] = useState(false);

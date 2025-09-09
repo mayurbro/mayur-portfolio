@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { assets } from "@/assets/assets";
-import { infoList } from "@/assets/assets";
-import { toolsData } from "@/assets/assets";
+import { assets } from "@/public/assets";
+import { infoList } from "@/public/assets";
+import { toolsData } from "@/public/assets";
 import { motion } from "motion/react";
 const About = ({ isDarkMode }) => {
   return (

@@ -1,4 +1,4 @@
-import { serviceData } from "@/assets/assets";
+import { serviceData } from "@/public/assets";
 import Image from "next/image";
 import { motion } from "motion/react";
 const Services = () => {

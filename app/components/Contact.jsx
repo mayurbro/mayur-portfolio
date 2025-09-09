@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { assets } from "@/assets/assets";
+import { assets } from "@/public/assets";
 import { motion } from "motion/react";
 const Contact = () => {
   const [result, setResult] = useState("");
