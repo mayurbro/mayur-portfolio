@@ -199,7 +199,7 @@ export const toolsData = [
 
   "/mongodb.png",
   "/figma.png",
-  "/git.png",
+  "/githubclr.png",
   "/icon_photoshop.png",
   "/webflow_48.png",
 ];

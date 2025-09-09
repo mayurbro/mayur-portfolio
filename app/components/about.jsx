@@ -43,13 +43,15 @@ const About = ({ isDarkMode }) => {
           className="w-64 sm:w-80 rounded-3xl max-w-none "
         >
           {" "}
-          <Image
-            alt=""
-            width={50}
-            height={50}
-            src="/user_profile3.png"
-            className="w-full rounded-3xl"
-          />
+          <div className="w-75 h-100 overflow-hidden  rounded-lg relative">
+            <Image
+              alt=""
+              width={1526}
+              height={1996}
+              src="/user_profile3.png"
+              className="w-3000  h-auto absolute to-50%  object-cover"
+            />
+          </div>
         </motion.div>
 
         <motion.div

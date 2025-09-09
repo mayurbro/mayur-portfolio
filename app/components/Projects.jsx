@@ -43,10 +43,10 @@ const Projects = () => {
                       {project.github && (
                         <a href={project.github} className="rounded-full">
                           <Image
-                            width={8}
-                            height={8}
+                            width={50}
+                            height={50}
                             className="w-8 hover:-translate-y-2 duration-500 rounded-full hover:bg-blue-300"
-                            src={"/github_icon.png"}
+                            src={"/githubclr.png"}
                             alt=""
                           />
                         </a>
@@ -54,8 +54,8 @@ const Projects = () => {
 
                       <a href={project.liveSite}>
                         <Image
-                          width={8}
-                          height={8}
+                          width={50}
+                          height={50}
                           className="w-8 cursor-pointer  hover:-translate-y-2 duration-500 rounded-full hover:bg-blue-300"
                           src={"/browser.png"}
                           alt=""

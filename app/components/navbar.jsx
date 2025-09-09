@@ -32,7 +32,8 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
           alt=""
           src="/header-bg-color.png"
           className="w-full h-screen"
-          fill
+          width={1000}
+          height={1000}
         />
       </div>
       <nav
