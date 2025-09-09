@@ -2,7 +2,7 @@
 import { useRef, useState, useEffect } from "react";
 // import Image from "./Image";
 import Image from "next/image";
-import { assets } from "@/public/assets";
+import { assets } from "@/assets/assets";
 export default function Navbar({ isDarkMode, setIsDarkMode }) {
   const ref = useRef();
   const [scroll, setScroll] = useState(false);
@@ -30,8 +30,9 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
       >
         <Image
           alt=""
-          src={assets.header_bg_color}
+          src="/header-bg-color.png"
           className="w-full h-screen"
+          fill
         />
       </div>
       <nav
@@ -73,7 +74,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
             onClick={() => setIsDarkMode((prev) => !prev)}
           >
             <Image
-              src={isDarkMode ? assets.sun_icon : assets.moon_icon}
+              src={isDarkMode ? "/sun_icon.png" : "/moon_icon.png"}
               width={24}
               height={24}
               className="w-6"
@@ -88,7 +89,9 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
             <Image
               className="w-3"
               alt=""
-              src={isDarkMode ? assets.arrow_icon_dark : assets.arrow_icon}
+              width={3}
+              height={3}
+              src={isDarkMode ? "/arrow-icon-dark.png" : "/arrow-icon.png"}
             />
           </a>
 
@@ -96,7 +99,9 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
             <Image
               className="block md:hidden w-6 cursor-pointer"
               alt=""
-              src={isDarkMode ? assets.menu_white : assets.menu_black}
+              width={6}
+              height={6}
+              src={isDarkMode ? "/menu_white.png" : "/menu_black.png"}
             />
           </button>
         </div>
@@ -110,8 +115,10 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
           <div onClick={closeModel}>
             <Image
               alt=""
+              width={5}
+              height={5}
               className="absolute top-5 right-3 w-5  cursor-pointer"
-              src={isDarkMode ? assets.close_white : assets.close_black}
+              src={isDarkMode ? "/close_white.png" : "/close_black.png"}
             />
           </div>
 

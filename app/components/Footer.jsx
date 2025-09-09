@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { assets } from "@/public/assets";
+import { assets } from "@/assets/assets";
 const Footer = ({ isDarkMode }) => {
   return (
     <div className="mt-20">
@@ -10,7 +10,9 @@ const Footer = ({ isDarkMode }) => {
         </h3>
         <div className="w-max flex items-center gap-2 mx-auto">
           <Image
-            src={isDarkMode ? assets.mail_icon_dark : assets.mail_icon}
+            width={5}
+            height={5}
+            src={isDarkMode ? "/mail_icon_dark.png" : "/mail_icon.png"}
             className="w-5"
             alt=""
           />

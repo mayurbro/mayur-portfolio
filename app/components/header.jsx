@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { assets } from "@/public/assets";
+import { assets } from "@/assets/assets";
 import { motion } from "motion/react";
 
 export default function Header({ isDarMode }) {
@@ -14,7 +14,7 @@ export default function Header({ isDarMode }) {
         transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
         className="flex flex-col items-center rounded-full overflow-hidden h-50 w-50  object-cover"
       >
-        <Image width={200} height={300} alt="" src={assets.profile2_picture} />
+        <Image width={200} height={300} alt="" src={"/profile2_picture.png"} />
       </motion.div>
 
       <motion.h3
@@ -49,9 +49,11 @@ export default function Header({ isDarMode }) {
         >
           Contact me{" "}
           <Image
+            width={3}
+            height={3}
             className="w-3"
             alt=""
-            src={isDarMode ? assets.arrow_icon : assets.arrow_icon_dark}
+            src={isDarMode ? "/arrow-icon.png" : "/arrow-icon-dark.png"}
           />
         </motion.a>
 
@@ -63,7 +65,14 @@ export default function Header({ isDarMode }) {
           href="/mayur-resume.pdf"
           download
         >
-          My resume <Image className="w-5 " alt="" src={assets.download_icon} />
+          My resume{" "}
+          <Image
+            width={5}
+            height={5}
+            className="w-5 "
+            alt=""
+            src={"/download_icon.png"}
+          />
         </motion.a>
       </div>
     </div>

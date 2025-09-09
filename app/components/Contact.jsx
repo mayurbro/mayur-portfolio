@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import { assets } from "@/public/assets";
+import { assets } from "@/assets/assets";
 import { motion } from "motion/react";
 const Contact = () => {
   const [result, setResult] = useState("");
@@ -109,7 +109,7 @@ const Contact = () => {
         >
           Submit now
           <Image
-            src={assets.right_arrow_white}
+            src="/right_arrow_white.png"
             alt=""
             width={16}
             height={16}

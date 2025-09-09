@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { assets } from "@/public/assets";
-import { infoList } from "@/public/assets";
-import { toolsData } from "@/public/assets";
+
+import { infoList } from "@/assets/assets";
+import { toolsData } from "@/assets/assets";
 import { motion } from "motion/react";
 const About = ({ isDarkMode }) => {
   return (
@@ -45,7 +45,9 @@ const About = ({ isDarkMode }) => {
           {" "}
           <Image
             alt=""
-            src={assets.user_profile3}
+            width={50}
+            height={50}
+            src="/user_profile3.png"
             className="w-full rounded-3xl"
           />
         </motion.div>
@@ -93,6 +95,8 @@ const About = ({ isDarkMode }) => {
                 >
                   <Image
                     className="w-7"
+                    width={7}
+                    height={7}
                     src={isDarkMode ? iconDark : icon}
                     alt=""
                   />
@@ -114,7 +118,13 @@ const About = ({ isDarkMode }) => {
                   key={index}
                   className=" flex items-center justify-center  border  cursor-pointer border-gray w-12 sm:w-14 aspect-square rounded-lg hover:-translate-y-2 duration-500"
                 >
-                  <Image src={tool} alt="Tool" className="w-5 sm:w-7" />
+                  <Image
+                    width={5}
+                    height={5}
+                    src={tool}
+                    alt="Tool"
+                    className="w-5 sm:w-7"
+                  />
                 </li>
               );
             })}

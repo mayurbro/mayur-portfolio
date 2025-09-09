@@ -1,4 +1,4 @@
-import { serviceData } from "@/public/assets";
+import { serviceData } from "@/assets/assets";
 import Image from "next/image";
 import { motion } from "motion/react";
 const Services = () => {
@@ -27,7 +27,13 @@ const Services = () => {
               key={index}
               className="border border-gray-400 rounded-lg px-8 py-12 hover:shadow-2xl  hover:-translate-y-1 duration-500 dark:hover:shadow-white/40 dark:bg-transparent dark:hover:bg-[#2a004a] "
             >
-              <Image src={icon} alt="" className="w-10" />
+              <Image
+                width={10}
+                height={10}
+                src={icon}
+                alt=""
+                className="w-10"
+              />
               <h3 className="text-lg my-4 text-gray-700 dark:text-white/80">
                 {title}
               </h3>

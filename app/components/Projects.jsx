@@ -1,4 +1,4 @@
-import { assets, workData } from "@/public/assets";
+import { assets, workData } from "@/assets/assets";
 import Image from "next/image";
 import { motion } from "motion/react";
 const Projects = () => {
@@ -43,8 +43,10 @@ const Projects = () => {
                       {project.github && (
                         <a href={project.github} className="rounded-full">
                           <Image
+                            width={8}
+                            height={8}
                             className="w-8 hover:-translate-y-2 duration-500 rounded-full hover:bg-blue-300"
-                            src={assets.github_iconSVG}
+                            src={"/github_iconSVG.png"}
                             alt=""
                           />
                         </a>
@@ -52,8 +54,10 @@ const Projects = () => {
 
                       <a href={project.liveSite}>
                         <Image
+                          width={8}
+                          height={8}
                           className="w-8 cursor-pointer  hover:-translate-y-2 duration-500 rounded-full hover:bg-blue-300"
-                          src={assets.browser}
+                          src={"/browser.png"}
                           alt=""
                         />
                       </a>
