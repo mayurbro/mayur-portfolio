@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
+// import Image from "./Image";
 import Image from "next/image";
 import { assets } from "@/assets/assets";
 export default function Navbar({ isDarkMode, setIsDarkMode }) {
@@ -34,7 +35,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
         />
       </div>
       <nav
-        className={`fixed top-0 flex items-center justify-between  w-full  py-6 px-5 lg:px-8 xl:px-[8%] z-50 ${
+        className={` w-full  fixed  px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
           scroll
             ? "bg-white/50 backdrop-blur-2xl border-b-1 dark:bg-black/50 dark:backdrop-blur-2xl dark:border-b-white"
             : ""
@@ -101,7 +102,6 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
         </div>
 
         {/* Mobile menu */}
-
         <ul
           ref={ref}
           className=" md:hidden flex items-center  flex-col  gap-2 w-64 py-20 px-10  bg-rose-50  fixed -right-64 top-0 bottom-0 h-screen dark:bg-[#2a004a] dark:text-white
@@ -131,9 +131,8 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
             <a href="#education"> Education</a>
           </li>
         </ul>
-      </nav>
-
-      {/* Mobile nav */}
+      </nav>{" "}
+      <div></div>
     </>
   );
 }
