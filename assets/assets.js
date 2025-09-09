@@ -142,22 +142,22 @@ export const workData = [
 
 export const serviceData = [
   {
-    icon: "/web_icon.png",
-    title: "/Web design.png",
+    icon: "/web-icon.png",
+    title: "Web design.png",
     description:
       "Get a fresh and modern look to your business for online presence",
     link: "",
   },
 
   {
-    icon: "/code_icon.png",
+    icon: "/code-icon.png",
     title: "Website Development",
     description:
       "Built multiple full-stack projects which offers you a seamless experience",
     link: "",
   },
   {
-    icon: "/graphics_icon.png",
+    icon: "/graphics-icon.png",
     title: "Graphics design",
     description:
       "Provide end to end graphic design services for your bussiness",
@@ -167,28 +167,28 @@ export const serviceData = [
 
 export const infoList = [
   {
-    icon: "/code_icon.png",
-    iconDark: "/code_icon_dark.png",
+    icon: "/code-icon.png",
+    iconDark: "/code-icon-dark.png",
     title: "Frontend",
     description:
       "HTML5, CSS3, JavaScript, TypeScript, React Js, Next Js, Redux Toolkit, Github",
   },
   {
-    icon: "/code_icon.png",
-    iconDark: "/code_icon_dark.png",
+    icon: "/code-icon.png",
+    iconDark: "/code-icon-dark.png",
     title: "Backend & Database",
     description: "Node Js, Express, MongoDB, MySql, Redis, Microservices",
   },
 
   {
-    icon: "/edu_icon.png",
-    iconDark: "/edu_icon_dark.png",
+    icon: "/edu-icon.png",
+    iconDark: "/edu-icon-dark.png",
     title: "Education",
     description: "B.Tech in Computer Science & Enginnering",
   },
   {
-    icon: "/project_icon.png",
-    iconDark: "/project_icon_dark.png",
+    icon: "/project-icon.png",
+    iconDark: "/project-icon-dark.png",
     title: "Projects",
     description: "Built more than 5 projects",
   },

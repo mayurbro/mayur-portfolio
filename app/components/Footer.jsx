@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { assets } from "@/assets/assets";
+import Link from "next/link";
 const Footer = ({ isDarkMode }) => {
   return (
     <div className="mt-20">

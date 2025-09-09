@@ -71,7 +71,7 @@ export default function Header({ isDarMode }) {
             height={5}
             className="w-5 "
             alt=""
-            src={"/download_icon.png"}
+            src={"/download-icon.png"}
           />
         </motion.a>
       </div>

@@ -109,7 +109,7 @@ const Contact = () => {
         >
           Submit now
           <Image
-            src="/right_arrow_white.png"
+            src="/right-arrow-white.png"
             alt=""
             width={16}
             height={16}

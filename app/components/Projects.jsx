@@ -46,7 +46,7 @@ const Projects = () => {
                             width={8}
                             height={8}
                             className="w-8 hover:-translate-y-2 duration-500 rounded-full hover:bg-blue-300"
-                            src={"/github_iconSVG.png"}
+                            src={"/github_icon.png"}
                             alt=""
                           />
                         </a>

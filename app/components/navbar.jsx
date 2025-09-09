@@ -101,7 +101,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
               alt=""
               width={6}
               height={6}
-              src={isDarkMode ? "/menu_white.png" : "/menu_black.png"}
+              src={isDarkMode ? "/menu-white.png" : "/menu-black.png"}
             />
           </button>
         </div>
@@ -118,7 +118,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
               width={5}
               height={5}
               className="absolute top-5 right-3 w-5  cursor-pointer"
-              src={isDarkMode ? "/close_white.png" : "/close_black.png"}
+              src={isDarkMode ? "/close-white.png" : "/close-black.png"}
             />
           </div>
 
@@ -135,7 +135,7 @@ export default function Navbar({ isDarkMode, setIsDarkMode }) {
             <a href="#projects">Projects</a>
           </li>
           <li onClick={closeModel}>
-            <a href="#education"> Education</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>{" "}
